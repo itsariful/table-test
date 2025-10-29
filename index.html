@@ -4,6 +4,270 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+body .gs_team_area.gs_team_loading,body .gs_team_area.gs_team_loading * {
+    -webkit-transition: none!important;
+    transition: none!important
+}
+
+.gs-containeer,.gs-containeer *,.gs_team_area,.gs_team_area *,.mfp-gsteam,.mfp-gsteam * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.gs_team_area {
+    line-height: 1.5;
+    margin: 0 auto!important;
+    width: 100%
+}
+
+.gs_team_area table {
+    margin: 16px 0
+}
+
+.gs_team_area img {
+    height: auto
+}
+
+.gs_team_area a,.gs_team_area a:focus,.gs_team_area a:hover {
+    border: none;
+    outline: none!important
+}
+
+.gs_geam--loaded {
+    opacity: 1!important;
+    visibility: visible!important
+}
+
+.gs_team_image__wrapper {
+    border: none;
+    line-height: 0;
+    overflow: hidden
+}
+
+.gs-team-table .gsc-table-head .gs-team-table-cell {
+    border-bottom: 2px solid #9dd8f3;
+    color: #03a9f4;
+    font-weight: 400
+}
+
+.gs-team-table {
+    display: table;
+    width: 100%
+}
+
+.gs-team-table-row {
+    display: table-row
+}
+
+.gs-team-table-cell {
+    display: table-cell;
+    padding: 10px 10px 10px 0;
+    vertical-align: middle
+}
+
+.gs-team-table-cell:last-child {
+    padding-right: 0;
+    text-align: right!important
+}
+
+
+.gs_tm_theme_v_2 table {
+    border: none;
+    margin: 0;
+    width: 100%
+}
+
+.gs_tm_theme_v_2 table tbody tr,.gs_tm_theme_v_2 table tfoot tr,.gs_tm_theme_v_2 table thead tr {
+    border: none
+}
+
+.gs_tm_theme_v_2 table thead tr th {
+    border: none;
+    color: grey;
+    font-family: Poppins,sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase
+}
+
+.gs_tm_theme_v_2 table tbody td {
+    border: none
+}
+
+.gs_tm_theme_v_2 table img.gs_team_member--image {
+    aspect-ratio: 1;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center
+}
+
+.gs_tm_theme_v_2 table .gs-member-name {
+    color: #030d1e;
+    font-family: Poppins,sans-serif;
+    font-size: 17px;
+    font-weight: 600
+}
+
+.gs_tm_theme_v_2 table .gs-member-desig {
+    font-family: Poppins;
+    font-size: 15px
+}
+
+.gs_tm_theme_v_2 table .gs-member-desc {
+    margin: 0
+}
+
+.gs_tm_theme_v_2 table .gs-member-desc,.gs_tm_theme_v_2 table .gs-member-desc a {
+    color: grey;
+    font-family: Poppins;
+    font-size: 16px
+}
+
+.gs_tm_theme_v_2 table .gs-team-social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.gs_tm_theme_v_2 table .gs-team-social li {
+    border-radius: 50%;
+    margin-right: 8px
+}
+
+.gs_tm_theme_v_2 table .gs-team-social li:last-child {
+    margin-right: 0
+}
+
+.gs_tm_theme_v_2 table .gs-team-social li a {
+    background: transparent;
+    border: 1px solid #e2e2e2!important;
+    height: 40px;
+    margin: 0;
+    width: 40px
+}
+
+.gs_tm_theme_v_2 table .gs-team-social li a i,.gs_tm_theme_v_2 table .gs-team-social li a svg {
+    color: grey
+}
+
+.gs_tm_theme_v_2 table .gs-team--cl-image {
+    width: 8%
+}
+
+.gs_tm_theme_v_2 table .gs-team--cl-name,.gs_tm_theme_v_2 table .gs-team--cl-position {
+    width: 15%
+}
+
+.gs_tm_theme_v_2 table .gs-team--cl-des {
+    width: 52%
+}
+
+.gs_tm_theme_v_2 table .gs-team--cl-social {
+    width: 10%
+}
+
+.gs_team_area.gs-team-table-five table thead tr th {
+    color: grey;
+    padding: 18px;
+    text-transform: capitalize
+}
+
+.gs_team_area.gs-team-table-five table tr {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    position: relative;
+}
+
+.gs_team_area.gs-team-table-five table tbody tr:after {
+    background: #fff;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 10px 50px 0 rgba(12,21,41,.1);
+    box-shadow: 0 10px 50px 0 rgba(12,21,41,.1);
+    content: "";
+    height: calc(100% - 9px);
+    left: 0;
+    position: absolute;
+    top: 8px;
+    -webkit-transition: .5s;
+    transition: .5s;
+    width: 100%;
+    z-index: -1
+}
+
+.gs_team_area.gs-team-table-five table tbody tr:hover:after {
+    background: #f77674
+}
+
+.gs_team_area.gs-team-table-five table tbody td {
+    border: none;
+    padding: 16px;
+    padding-top: 26px!important;
+}
+
+.gs_team_area.gs-team-table-five table tbody td:first-child {
+    border-radius: 10px 0 0 10px;
+    padding-left: 16px
+}
+
+.gs_team_area.gs-team-table-five table tbody td:last-child {
+    padding-right: 16px
+}
+
+.gs_team_area.gs-team-table-five table .gs_team_image__wrapper {
+    border-radius: 8px;
+    height: 80px;
+    width: 80px
+}
+
+.gs_team_area.gs-team-table-five table .gs-team-social li {
+    border: none
+}
+
+.gs_team_area.gs-team-table-five table .gs-team-social li a {
+    background: #edf2f2;
+    border-radius: 6px
+}
+
+.gs_team_area.gs-team-table-five table .single-member:hover .gs-team-social li a {
+    background: hsla(0,0%,100%,.18);
+    border-color: transparent!important
+}
+
+.gs_team_area.gs-team-table-five table .single-member:hover .gs-team-social li a i,.gs_team_area.gs-team-table-five table .single-member:hover .gs-team-social li a svg {
+    color: #fff
+}
+
+.gs_team_area.gs-team-table-five table .single-member:hover .gs-member-name {
+    color: #fff
+}
+
+.gs_team_area.gs-team-table-five table .single-member .gs-member-desig {
+    color: #575757
+}
+
+.gs_team_area.gs-team-table-five table .single-member:hover .gs-member-desig {
+    color: #ffffffb3
+}
+
+.gs_team_area.gs-team-table-five table .single-member:hover .gs-member-desc {
+    color: #ffffffb3
+}
+
+.gs_team_area.gs-team-table-five table .single-member:hover .gs-member-desc a {
+    color: inherit
+}
+
+.gs_team_area.gs-team-table-five table .single-member:hover .gs-team-social li a:hover {
+    background: #fff!important
+}
+
+.gs_team_area.gs-team-table-five table .single-member:hover .gs-team-social li a:hover i,.gs_team_area.gs-team-table-five table .single-member:hover .gs-team-social li a:hover svg {
+    color: #f77674!important
+}
+    </style>
   </head>
   <body>
     <table class="">
